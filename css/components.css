@@ -1,0 +1,52 @@
+h1, h2, h3, h4 {
+  font-family: "Fraunces", "Georgia", serif;
+  color: var(--meridian-ink);
+  margin-top: 0;
+}
+
+.meridian-node-card {
+  background: var(--meridian-ivory);
+  border-radius: 18px;
+  padding: 24px 28px;
+  box-shadow: 0 12px 28px rgba(17, 24, 38, 0.12);
+  margin-bottom: 28px;
+  border: 1px solid rgba(17, 24, 38, 0.08);
+}
+
+.meridian-node-card__title {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.meridian-node-card__meta {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--meridian-teal);
+  margin-bottom: 16px;
+}
+
+.meridian-node-card__content {
+  color: var(--meridian-graphite);
+}
+
+.button,
+.button--primary,
+input[type="submit"] {
+  background: var(--meridian-copper);
+  color: var(--meridian-ivory);
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover,
+.button--primary:hover,
+input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(192, 112, 61, 0.25);
+}

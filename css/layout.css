@@ -1,0 +1,93 @@
+.meridian-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.meridian-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 6vw;
+  background: rgba(251, 247, 241, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(31, 41, 55, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.meridian-header__brand {
+  font-family: "Fraunces", "Georgia", serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+}
+
+.meridian-header__nav {
+  display: flex;
+  gap: 20px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.meridian-hero {
+  padding: 60px 6vw 40px;
+  background: linear-gradient(135deg, rgba(192, 112, 61, 0.18), rgba(63, 111, 117, 0.1));
+}
+
+.meridian-highlighted {
+  padding: 24px 6vw 0;
+}
+
+.meridian-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 40px;
+  padding: 40px 6vw 80px;
+  max-width: var(--meridian-max);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.meridian-main__content {
+  background: var(--meridian-ivory);
+  padding: 32px;
+  border-radius: var(--meridian-radius);
+  box-shadow: var(--meridian-shadow);
+}
+
+.meridian-main__aside {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.meridian-footer {
+  margin-top: auto;
+  padding: 40px 6vw 60px;
+  background: var(--meridian-ink);
+  color: var(--meridian-ivory);
+}
+
+.meridian-footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 960px) {
+  .meridian-main {
+    grid-template-columns: 1fr;
+  }
+
+  .meridian-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+.meridian-header.is-anchored {
+  box-shadow: 0 16px 32px rgba(11, 15, 26, 0.12);
+}

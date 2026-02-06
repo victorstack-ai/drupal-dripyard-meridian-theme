@@ -1,0 +1,43 @@
+<div class="meridian-shell">
+  <header class="meridian-header">
+    <div class="meridian-header__brand">
+      {{ page.header }}
+    </div>
+    <nav class="meridian-header__nav">
+      {{ page.primary_menu }}
+      {{ page.secondary_menu }}
+    </nav>
+  </header>
+
+  {% if page.hero %}
+    <section class="meridian-hero">
+      {{ page.hero }}
+    </section>
+  {% endif %}
+
+  {% if page.highlighted %}
+    <section class="meridian-highlighted">
+      {{ page.highlighted }}
+    </section>
+  {% endif %}
+
+  <main id="main-content" class="meridian-main">
+    <div class="meridian-main__content">
+      {{ page.content }}
+    </div>
+    {% if page.sidebar_first or page.sidebar_second %}
+      <aside class="meridian-main__aside">
+        {{ page.sidebar_first }}
+        {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
+  </main>
+
+  <footer class="meridian-footer">
+    <div class="meridian-footer__grid">
+      <div class="meridian-footer__col">{{ page.footer_primary }}</div>
+      <div class="meridian-footer__col">{{ page.footer_secondary }}</div>
+      <div class="meridian-footer__col">{{ page.footer_tertiary }}</div>
+    </div>
+  </footer>
+</div>

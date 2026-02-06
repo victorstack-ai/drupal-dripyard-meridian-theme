@@ -1,0 +1,56 @@
+:root {
+  --meridian-ink: #0b0f1a;
+  --meridian-night: #111826;
+  --meridian-graphite: #1f2937;
+  --meridian-mist: #f5f0e8;
+  --meridian-ivory: #fbf7f1;
+  --meridian-copper: #c0703d;
+  --meridian-gold: #e2b47a;
+  --meridian-teal: #3f6f75;
+  --meridian-radius: 20px;
+  --meridian-shadow: 0 24px 48px rgba(11, 15, 26, 0.18);
+  --meridian-max: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, #f8efe4 0%, #ece6dc 45%, #e4dcd0 100%);
+  color: var(--meridian-night);
+  font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--meridian-copper);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.meridian-skip {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--meridian-ink);
+  color: var(--meridian-ivory);
+  padding: 12px 20px;
+  border-radius: 999px;
+  z-index: 10;
+}
+
+.meridian-skip:focus {
+  left: 24px;
+  top: 20px;
+}

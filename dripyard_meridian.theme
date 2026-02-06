@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Theme functions for Dripyard Meridian.
+ */
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function dripyard_meridian_preprocess_html(array &$variables): void {
+  $variables['attributes']['class'][] = 'dripyard-meridian';
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function dripyard_meridian_preprocess_page(array &$variables): void {
+  $variables['attributes']['class'][] = 'meridian-page';
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function dripyard_meridian_preprocess_node(array &$variables): void {
+  $variables['attributes']['class'][] = 'meridian-node';
+}

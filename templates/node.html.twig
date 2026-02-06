@@ -1,0 +1,17 @@
+<article{{ attributes.addClass('meridian-node-card') }}>
+  {% if label %}
+    <h2 class="meridian-node-card__title">
+      <a href="{{ url }}">{{ label }}</a>
+    </h2>
+  {% endif %}
+
+  {% if display_submitted %}
+    <div class="meridian-node-card__meta">
+      {{ author_name }} · {{ date }}
+    </div>
+  {% endif %}
+
+  <div class="meridian-node-card__content">
+    {{ content }}
+  </div>
+</article>

@@ -1,0 +1,19 @@
+name: Dripyard Meridian
+type: theme
+description: 'Meridian is the latest Dripyard premium-inspired Drupal theme with bold layout, editorial typography, and layered motion.'
+core_version_requirement: ^10 || ^11
+base theme: stable9
+libraries:
+  - dripyard_meridian/global
+regions:
+  header: Header
+  primary_menu: Primary menu
+  secondary_menu: Secondary menu
+  hero: Hero
+  highlighted: Highlighted
+  content: Content
+  sidebar_first: Sidebar first
+  sidebar_second: Sidebar second
+  footer_primary: Footer primary
+  footer_secondary: Footer secondary
+  footer_tertiary: Footer tertiary
